@@ -42,13 +42,13 @@ export default function Card({ ele, className }) {
           <div className="card-header">
             <div className="card-cover"></div>
             <div className="!rounded-full card-avatar">
-              <Image
+              {/* <Image
                 className="!rounded-full h-full w-full"
-                src={ele.image}
+                // src={ele.image}
                 width={100}
                 height={100}
                 alt="avatar"
-              />
+              /> */}
             </div>
             <h1
               className={`card-fullname flex flex-wrap !text-wrap !break-all !text-black  `}
@@ -73,19 +73,19 @@ export default function Card({ ele, className }) {
                   <p className="card-desc">
                     I am a{" "}
                     {parseInt(year.toString().slice(2, 4)) -
-                      parseInt(ele.email.slice(-20, -18)) ==
+                      parseInt(ele.mail.slice(-20, -18)) ==
                       1 && "2nd"}{" "}
                     {parseInt(year.toString().slice(2, 4)) -
-                      parseInt(ele.email.slice(-20, -18)) ==
+                      parseInt(ele.mail.slice(-20, -18)) ==
                       2 && "3rd"}{" "}
                     {parseInt(year.toString().slice(2, 4)) -
-                      parseInt(ele.email.slice(-20, -18)) ==
+                      parseInt(ele.mail.slice(-20, -18)) ==
                       3 && "4th"}{" "}
                     {parseInt(year.toString().slice(2, 4)) -
-                      parseInt(ele.email.slice(-20, -18)) ==
+                      parseInt(ele.mail.slice(-20, -18)) ==
                       0 && "1st"}{" "}
                     {parseInt(year.toString().slice(2, 4)) -
-                      parseInt(ele.email.slice(-20, -18)) ==
+                      parseInt(ele.mail.slice(-20, -18)) ==
                       4 && "4th"}{" "}
                     Year Student, Currently Pursuing My B.Tech In{" "}
                     <span className="uppercase">{ele.branch}</span>
